@@ -25,7 +25,6 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "react/prop-types": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -34,7 +33,15 @@
         "tsx": "never"
       }
     ],
-    "indent": ["error", 4]
+    // Disable PropTypes
+    "react/prop-types": "off",
+    // TypeScript only
+    "@typescript-eslint/no-explicit-any": "off",
+    // TypeScript extending
+    "indent": "off",
+    "@typescript-eslint/indent": ["error"],
+    "semi": "off",
+    "@typescript-eslint/semi": ["error"]
   },
   "settings": {
     "import/resolver": {
